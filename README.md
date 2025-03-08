@@ -11,7 +11,7 @@ An MRI segmentation tool for lung and heart segmentation using PlatyPy library.
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/MRI-Segmentation.git
+git clone https://github.com/XiaoKChenEdu/MRI-Segmentation
 cd MRI-Segmentation
 ```
 
