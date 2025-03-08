@@ -31,6 +31,7 @@ chmod +x install_lung.sh
 The following Python packages are required:
 
 - platipy==0.5.1
+- platipy[cardiac]
 - SimpleITK==2.2.1
 - matplotlib==3.7.1
 - numpy==1.24.3
