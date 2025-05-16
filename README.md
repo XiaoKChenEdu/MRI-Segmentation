@@ -15,12 +15,19 @@ git clone https://github.com/XiaoKChenEdu/MRI-Segmentation
 cd MRI-Segmentation
 ```
 
-2. Install dependencies:
+2. Install uv (if not already installed):
 ```bash
-pip install -r requirements.txt
+pip install uv
 ```
 
-3. Install the custom lung segmentation module:
+3. Install dependencies using uv:
+```bash
+uv install .
+source .venv/bin/activate
+pip install platipy[cardiac]
+```
+
+4. Install the custom lung segmentation module:
 ```bash
 chmod +x install_lung.sh
 ./install_lung.sh
@@ -28,13 +35,7 @@ chmod +x install_lung.sh
 
 ## Dependencies
 
-The following Python packages are required:
-
-- platipy==0.5.1
-- platipy[cardiac]
-- SimpleITK==2.2.1
-- matplotlib==3.7.1
-- numpy==1.24.3
+This project uses `uv`, a fast Python package installer and resolver. Learn more about uv at [https://github.com/astral-sh/uv](https://github.com/astral-sh/uv).
 
 ## Project Structure
 

@@ -12,7 +12,7 @@ from platipy.imaging import ImageVisualiser
 from platipy.imaging.label.utils import get_com
 
 ### Change this ###
-filename = f'volume_{90}'
+filename = f'volume_{0}'
 ### Change this ###
 
 os.makedirs(f"./output/{filename}", exist_ok=True)

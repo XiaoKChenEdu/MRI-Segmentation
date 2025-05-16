@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Check if platipy is installed
-if ! python3 -c "import platipy" &> /dev/null; then
+if ! uv run python3.8 -c "import platipy" &> /dev/null; then
     echo "Error: platipy package is not installed"
     echo "Please install platipy first using: pip install platipy"
     exit 1
 fi
 
 # Define the target directory
-TARGET_DIR="$HOME/.local/lib/python3.8/site-packages/platipy/imaging/utils"
+TARGET_DIR=".venv/lib/python3.8/site-packages/platipy/imaging/utils"
 
 # Check if the target directory exists
 if [ ! -d "$TARGET_DIR" ]; then
