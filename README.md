@@ -22,7 +22,7 @@ pip install uv
 
 3. Install dependencies using uv:
 ```bash
-uv install .
+uv sync
 source .venv/bin/activate
 pip install platipy[cardiac]
 ```
