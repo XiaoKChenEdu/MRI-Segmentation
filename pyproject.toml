@@ -1,0 +1,13 @@
+[project]
+name = "mri-segmentation"
+version = "0.1.0"
+description = "An MRI segmentation tool for lung and heart segmentation using PlatyPy library."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "matplotlib==3.7.1",
+    "numpy==1.24.3",
+    "platipy[cardiac]==0.7.2",
+    "simpleitk==2.2.1",
+    "torch==2.4.1",
+]
